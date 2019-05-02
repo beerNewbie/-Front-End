@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/**
+			 * 1)获取指定的图片标签对象
+			 *    需要DOM操作:使用getElementById("id属性值")
+			    2)使用对象改变当前图片的src属性
+			 * */
+			
+			function changeImg(){
+				//获取指定的图片标签对象
+				var img = document.getElementById("img1") ;
+				//2)更改src属性
+				img.src="img/图片.jpg"
+			}
+		</script>
+	</head>
+	<body>
+		<img id="img1" src="img/02.jpg"  width="100%"/>
+	   <br />
+	   <input type="button" value="点我试试" onclick="changeImg()" />
+	</body>
+</html>
