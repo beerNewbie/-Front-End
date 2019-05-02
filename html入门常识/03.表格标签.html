@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格标签</title>
+		<style>
+			tr{
+				/*CSS字体样式：文本对齐方式*/
+				text-align: center;
+			}
+		</style>
+		<!--
+			
+			table标签中常用的属性
+					表格要有效果显示：必须指定border属性：边框
+				            表格的宽度/高度:width/height
+				      对齐方式：align
+				     背景色：bgcolor  (html标签的属性)
+				       background-color:CSS背景样式
+				  cellspacing:设置表格的边框线和单元格边沿之间的空间
+				  cellpading:单元格和单元格之间的空间
+			表格的标题标签
+			    table
+			         caption标签
+			         
+			         
+			表格标签的用法:
+			   单元格的合并：
+			      合并行：rowspan
+			   合并列：colspan
+				     
+				              
+		-->
+	</head>
+	<body>
+	<table border="1px" width="500px" cellpadding="10" cellspacing="0" bgcolor="pink" height="300px" align="center">
+			<caption>xxxx学校通讯录</caption>
+			<thead>
+			<tr>
+				<th>序号</th>
+				<th>姓名</th>
+				<th>班级</th>
+				<th>住址</th>
+			</tr>
+			</thead>
+			<!--<tr align="center">-->
+		   <tbody>
+			<tr>
+				<td rowspan="2">11</td>
+				<td colspan="3">12</td>
+				<!--<td>13</td>
+				<td>14</td>-->
+			</tr>
+			<!--<tr align="center">-->
+			<tr>
+				<!--<td>21</td>-->
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+			</tr>
+			<tr>
+		<!--	<tr align="center">-->
+				<td>31</td>
+				<td>32</td>
+				<td>33</td>
+				<td>34</td>
+			</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
