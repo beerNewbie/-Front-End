@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签1</title>
+		<!--
+			表单标签:使用form标签
+			      属性:
+			        action:提交的后台地址url
+			        method:提交方式:
+			                   常用两个
+			             get
+			             post
+			             
+			             区别:
+			               前者1)不适合填写敏感数据,举例:密码输入框的内容
+			                   不管前端校验还是后端校验:密码的内容最终都会被加密
+			        MD5(基于底层算法)/springSecurity(安全框架)
+			            MD5加密:
+			              123456----   %A%E.....
+			        springSecurity(安全框架)
+			             123456 ==== %EA%SFS%...
+			             123456        值不和上面的重复     
+			         2)提交的数据最终在地址栏上显示:key1=value1&key2=value2...
+			                   提交大小有限制:不超过1kb
+			          
+			      post方式
+			      	1)适合敏感数据
+			      	2)不会将数据提交地址栏,提交数据大小显示
+			      	  显示的内容是在:请求头:request-header
+			      	   实体内容:username=wangwu&password=123456
+			      	  
+			      
+			    
+			   表单标签中必填的属性:
+			      name属性:作为系统后台的一个标记,知道当前填写的内容是哪一个类型的内容
+		--> 
+		
+	</head>
+	<body>
+<form action="#" method="post">
+用户名:<input type="text" name="username" /><br />
+密&nbsp;&nbsp;&nbsp;码:<input type="password" name="password" /><br />
+<input type="submit" value="注册" />
+</form>
+	</body>
+</html>
