@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪类选择器</title>
+<style>
+	/*link状态*/
+	a:link{
+		font-size: 20px;
+		color: #F00;
+		/*文本修饰:去掉下划线*/
+		text-decoration: none;
+	}
+	
+	/*visited状态*/
+	a:visited{
+		font-size: 20px;
+		color: #CCC; /*灰色*/
+		text-decoration: underline;
+	}
+	
+	/*hover状态*/
+	a:hover{
+		font-size: 26px;
+		color: #0F0;
+		/*显示下划线*/
+		text-decoration: underline;
+	}
+	/*active状态*/
+	a:active{
+		font-size: 36px;
+		color: #00F;
+		/*文本修饰:去掉下划线*/
+		text-decoration: none;
+		
+	}
+	
+	
+	
+</style>
+<!--
+	
+	伪类(锚伪类)选择器描述的一个标签的状态
+	格式:标签名称:状态{css代码}
+	    link状态:鼠标没有访问过的状态
+	    hover状态:鼠标经过的状态
+	    active状态:鼠标激活状态,点击了,但是鼠标没有松开的状态
+	    visited状态:鼠标已经访问过的状态,点击了,并且松开的状态
+	    
+ 提示：在 CSS 定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
+
+提示：在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。
+
+提示：伪类名称对大小写不敏感。
+
+
+
+-->
+	</head>
+<body>
+<a href="02_CSS选择器.html">超链接</a>
+</body>
+</html>
